@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/Image'
+import Image from 'next/image'
 import HeaderItem from './HeaderItem'
 import {HomeIcon,
 BadgeCheckIcon,
@@ -20,7 +20,7 @@ const Header = () => {
             <HeaderItem title='Search' Icon={SearchIcon}/>
             <HeaderItem title='Account' Icon={UserIcon}/>
         </div>
-        <Image className='object-contain lg:mr-4 -mt-4 ' src='http://assets.stickpng.com/images/58480a75cef1014c0b5e491b.png'  width={150} height={70} />
+        <Image className='object-contain lg:mr-4 -mt-4 ' src='http://assets.stickpng.com/images/58480a75cef1014c0b5e491b.png'  width={150} height={70} alt='logo'/>
 
     </header>
   )

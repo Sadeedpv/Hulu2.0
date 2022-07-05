@@ -10,6 +10,7 @@ const Thumbnail = ({item}) => {
         layout='responsive'
         height={1080}
         width={1420}
+        alt='Thumbnail'
         />
         <div className='p-2'>
             <p className='truncate max-w-md'>{item.synopsis}</p>
