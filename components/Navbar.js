@@ -2,9 +2,34 @@ import { useRouter } from 'next/router'
 import React, { useEffect } from 'react'
 import axios from 'axios';
 
-export default function Navbar ({genre}) {
-  console.log(genre)
+export default function Navbar () {
   const router = useRouter();
+
+  const [genre, setGenre] = React.useState([]);
+
+  useEffect(() =>{
+    const options2 = {
+    method: 'GET',
+    url: 'https://ott-details.p.rapidapi.com/getParams',
+    params: {param: 'genre'},
+    headers: {
+      'X-RapidAPI-Key': process.env.NEXT_API_KEY,
+      'X-RapidAPI-Host': 'ott-details.p.rapidapi.com'
+    }
+  };
+
+  async function query(){
+    const genres = await 
+    axios.request(options2).then(res =>{
+      return res.data;
+    });
+    setGenre(genres);
+  }
+
+  query();
+
+
+  }, [])
 
 
   return (
