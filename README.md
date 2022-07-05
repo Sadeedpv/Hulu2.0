@@ -1,6 +1,7 @@
 # HULU 2.0
 
 ## PREVIEW ✨
+![Preview](https://github.com/Sadeedpv/Hulu2.0/public/hero.png?raw=true)
 
 
 ## APP MADE WITH 🚀
