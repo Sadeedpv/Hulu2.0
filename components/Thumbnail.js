@@ -2,14 +2,13 @@ import React from 'react';
 import Image from 'next/image'
 
 const Thumbnail = ({item}) => {
-    console.log(item.imageurl[0])
   return (
     <div className='p-2 group cursor-pointer transition duration-150 ease-in transform sm:hover:scale-105 hover:z-150'>
         <Image 
         src={item.imageurl[0] || 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDv453LSZFJJFCO2U7yFTAHJms0XD2CgQF7Q&usqp=CAU'}
         layout='responsive'
-        height={1080}
-        width={1420}
+        height={680}
+        width={820}
         alt='Thumbnail'
         />
         <div className='p-2'>
